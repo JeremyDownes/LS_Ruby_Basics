@@ -1,0 +1,38 @@
+# New Pet
+pets = ['cat', 'dog', 'fish', 'lizard']
+my_pet = pets[2]
+print "I have a pet #{my_pet}!"
+
+# More Than One
+my_pets = pets.slice(2,3) # The one i remembered. same as js?
+my_pets = pets[2..3]      # corrected
+print "I have a pet #{my_pets[0]} and a pet #{my_pets[1]}!"
+
+# Free the Lizard (not a good idea when you're in public)
+my_pets.pop
+print "I have a pet #{my_pets[0]}" 
+
+# One Isn't Enough
+my_pets.push(pets[1])
+print "I have a pet #{my_pets[0]} and a pet #{my_pets[1]}!"
+puts
+
+# What Color Are You?
+colors = ['red', 'yellow', 'purple', 'green'].each do |colour|
+    puts "Je suis colour #{colour}!"
+end
+
+# Doubled
+numbers = [1, 2, 3, 4, 5]
+p doubled_numbers = numbers.map { |x| x * 2}
+
+# Divisible by Three
+numbers = [5, 9, 21, 26, 39]
+p divisible_by_three = numbers.select { |x| x % 3 == 0}
+
+#Favorite Number (Part 1)
+favorites = [['Dave', 7],[ 'Miranda', 3],[ 'Jason', 11]]
+
+# Favorite Number (Part 2)
+p flat_favorites = favorites.flatten
+false
